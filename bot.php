@@ -178,7 +178,6 @@ echo color("blue"," ======================================\n");
          echo"\n==================================\n\n";
          echo color("yellow","!] Silahkan registrasi kembali\n");
          goto ulang;
-         }
-//  }
 
-// echo change()."\n";
+  }
+echo change()."\n";
