@@ -152,7 +152,5 @@ echo color("grey"," ======================================\n");
         echo color("yellow","!] Silahkan input kembali\n");
         goto otp;
         goto ulang;
-  }
- }
-}
+
 echo change()."\n"; ?>
