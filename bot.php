@@ -146,7 +146,7 @@ echo color("grey"," ======================================\n");
         }else{
         goto setpin;
         }
-        }else{
+        }
         echo color("red","-] Otp yang anda input salah");
         echo"\n==================================\n\n";
         echo color("yellow","!] Silahkan input kembali\n");
