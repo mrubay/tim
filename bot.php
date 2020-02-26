@@ -151,8 +151,8 @@ echo color("grey"," ======================================\n");
          echo"\n==================================\n\n";
          echo color("yellow","!] Silahkan input kembali\n");
          goto otp;
-         }else{
          }
+         }else{
          echo color("red","NOMOR SUDAH TERDAFTAR/SALAH !!!");
          echo "\nMau ulang? (y/n): ";
          $pilih = trim(fgets(STDIN));
@@ -164,4 +164,5 @@ echo color("grey"," ======================================\n");
          goto ulang;
   }
  }
+}
 echo change()."\n"; ?>
