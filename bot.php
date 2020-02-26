@@ -112,7 +112,7 @@ echo color("red"," ======================================\n");
         $voucher4 = getStr1('"title":"','",',$cekvoucher,"4");
         $voucher5 = getStr1('"title":"','",',$cekvoucher,"5");
         echo "\n".color("white","!] Total voucher ".$total." : ");
-        echo color("green","1. ".$voucher1);
+        echo color("red","1. ".$voucher1);
         echo "\n".color("red","                     2. ".$voucher2);
         echo "\n".color("red","                     3. ".$voucher3);
         echo "\n".color("red","                     4. ".$voucher4);
