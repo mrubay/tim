@@ -2,8 +2,8 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("red"," ======================================\n");
-echo color("red","|Daftar Akun + Auto Claim Voucher Food|\n");
-echo color("red","| ______|____•_+ Buat PIN_•___|_______|\n");
+echo color("white","|Daftar Akun + Auto Claim Voucher Food|\n");
+echo color("white","| ______|____•_+ Buat PIN_•___|_______|\n");
 echo color("red","| ________|______|__|_______|_________|\n");
 echo color("red","| __________|___|_____|___|___________|\n");
 echo color("white","| ____________|___21____|_____________|\n");
@@ -42,17 +42,17 @@ echo color("red"," ======================================\n");
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
-        echo color("green","+] Kode verifikasi sudah di kirim")."\n";
+        echo color("white","+] Kode verifikasi sudah di kirim")."\n";
         otp:
         echo color("red","?] Otp: ");
         $otp = trim(fgets(STDIN));
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
         if(strpos($verif, '"access_token"')){
-        echo color("green","+] Berhasil mendaftar\n");
+        echo color("white","+] Berhasil mendaftar\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
-        echo color("green","+] Your access token : ".$token."\n\n");
+        echo color("red","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("red","\n===========(REDEEM VOUCHER)===========");
         echo "\n".color("white","!] Claim voc GORIDE 8K");
