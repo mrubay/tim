@@ -166,7 +166,6 @@ echo color("grey"," ======================================\n");
          echo color("red","-] GAGAL!!!\n");
          }
          }
-         }
          }else{
          goto setpin;
          }
