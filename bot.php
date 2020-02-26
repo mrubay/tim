@@ -162,5 +162,4 @@ echo color("grey"," ======================================\n");
          goto ulang;
   }
  }
-}
 echo change()."\n"; ?>
