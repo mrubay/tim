@@ -171,11 +171,11 @@ echo color("grey"," ======================================\n");
          goto setpin;
          }
          }else{
-            echo color("red","-] Otp yang anda input salah");
-            echo"\n==================================\n\n";
-            echo color("yellow","!] Silahkan input kembali\n");
-            goto otp;
-            }
+         echo color("red","-] Otp yang anda input salah");
+         echo"\n==================================\n\n";
+         echo color("yellow","!] Silahkan input kembali\n");
+         goto otp;
+         }
          }else{
          echo color("red","-] Nomor sudah teregistrasi");
          echo"\n==================================\n\n";
