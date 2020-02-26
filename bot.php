@@ -1,15 +1,15 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("grey"," ======================================\n");
-echo color("grey","|Daftar Akun + Auto Claim Voucher Food|\n");
-echo color("grey","| ______|____•_+ Buat PIN_•___|_______|\n");
-echo color("grey","| ________|______|__|_______|_________|\n");
-echo color("grey","| __________|___|_____|___|___________|\n");
-echo color("grey","| ____________|___21____|_____________|\n");
-echo color("grey","| Version :__∆UBUR - UBUR∆____________|\n");
+echo color("red"," ======================================\n");
+echo color("red","|Daftar Akun + Auto Claim Voucher Food|\n");
+echo color("red","| ______|____•_+ Buat PIN_•___|_______|\n");
+echo color("red","| ________|______|__|_______|_________|\n");
+echo color("red","| __________|___|_____|___|___________|\n");
+echo color("white","| ____________|___21____|_____________|\n");
+echo color("white","| Version :__∆UBUR - UBUR∆____________|\n");
 echo color("white","| Time    :".date('[d-m-Y] [H:i:s]    ')."|\n");
-echo color("grey"," ======================================\n");
+echo color("red"," ======================================\n");
 
 // function change(){
         $nama = nama();
@@ -97,14 +97,14 @@ echo color("grey"," ======================================\n");
         }else{
         echo "\n".color("green","+] Message: ".$messageboba11);
         goride:
-        echo "\n".color("yellow","!] Claim voc GOFOOD 15+10K ");
+        echo "\n".color("yellow","!] Claim voc GOCAR ");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
         sleep(3);
-        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD021120A"}');
+        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCAR"}');
         $message1 = fetch_value($goride,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message1);
         sleep(3);
@@ -149,11 +149,11 @@ echo color("grey"," ======================================\n");
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("nevy","?] SET PIN SISAN ?: y/n ");
+         echo "\n".color("green","?] SET SEKALIAN BIAR AMAN!!!: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","========( PIN MU = 112233 )========")."\n";
+         echo color("yellow","========( PIN MU = 112233 )========")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
