@@ -7,7 +7,7 @@ echo color("yellow","| ____|____•_+ Buat PIN -_•_____|_____|\n");
 echo color("green","| ________|______|__|_______|_________|\n");
 echo color("green","| __________|___|_____|___|___________|\n");
 echo color("yellow","| ____________|___21____|_____________|\n");
-echo color("yellow","| Version :__∆UBUR - UBUR∆________|\n");
+echo color("yellow","| Version :__∆UBUR - UBUR∆____________|\n");
 echo color("yellow","| Time    :".date('[d-m-Y] [H:i:s]    ')."|\n");
 echo color("green"," ======================================\n");
 
@@ -100,9 +100,9 @@ echo color("green"," ======================================\n");
         sleep(1);
         }
         sleep(3);
-        $gofood1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320B"}');
-        $messagegofood1 = fetch_value($gofood1,'"message":"','"');
-        echo "\n".color("red","+] Message: ".$messagegofood1);
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320A"}');
+        $messageboba09 = fetch_value($boba09,'"message":"','"');
+        echo "\n".color("red","+] Message: ".$messageboba09);
         sleep(3);
         $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
