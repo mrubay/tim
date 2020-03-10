@@ -3,11 +3,11 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("red"," ======================================\n");
 echo color("white","|Daftar Akun + Auto Claim Voucher Food|\n");
-echo color("white","| ______|____\n"), echo color("green","•_+ Buat PIN -_•\n"), echo color("white","_|_______|\n");
+echo color("white","| ____|____\n"); echo color("green","•_+ Buat PIN -_•\n"); echo color("white","_|_____|\n");
 echo color("red","| ________|______|__|_______|_________|\n");
 echo color("red","| __________|___|_____|___|___________|\n");
 echo color("white","| ____________|___21____|_____________|\n");
-echo color("white","|\n"), echo color("green"," Version :__∆UBUR - UBUR∆____________\n"), echo color("white","|\n");
+echo color("white","|\n"); echo color("green"," Version :__∆UBUR - UBUR∆________\n"); echo color("white","|\n");
 echo color("white","| Time    :".date('[d-m-Y] [H:i:s]    ')."|\n");
 echo color("red"," ======================================\n");
 
