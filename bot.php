@@ -75,10 +75,10 @@ echo color("green"," ======================================\n");
         sleep(1);
         }
         sleep(3);
-        $boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320A"}');
-        $messageboba10 = fetch_value($boba10,'"message":"','"');
-        if(strpos($boba10, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("red","+] Message: ".$messageboba10);
+        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320A"}');
+        $messageboba19 = fetch_value($boba19,'"message":"','"');
+        if(strpos($boba19, 'Promo kamu sudah bisa dipakai.')){
+        echo "\n".color("red","+] Message: ".$messageboba19);
         goto goride;
         }else{
         echo "\n".color("red","+] Message: ".$messageboba19);
@@ -90,9 +90,9 @@ echo color("green"," ======================================\n");
         sleep(1);
         }
         sleep(3);
-        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJAINAJA"}');
-        $messageboba19 = fetch_value($boba19,'"message":"','"');
-        echo "\n".color("red","+] Message: ".$messageboba19);
+        $boba11 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJAINAJA"}');
+        $messageboba11 = fetch_value($boba11,'"message":"','"');
+        echo "\n".color("red","+] Message: ".$messageboba11);
         echo "\n".color("white","!] Claim voc GOFOOD 30K");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
@@ -100,9 +100,9 @@ echo color("green"," ======================================\n");
         sleep(1);
         }
         sleep(3);
-        $goride1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320B"}');
-        $message2 = fetch_value($goride1,'"message":"','"');
-        echo "\n".color("red","+] Message: ".$message2);
+        $gofood1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320B"}');
+        $messagegofood1 = fetch_value($gofood1,'"message":"','"');
+        echo "\n".color("red","+] Message: ".$messagegofood1);
         sleep(3);
         $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
