@@ -1,15 +1,15 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("red"," ======================================\n");
-echo color("white","|Daftar Akun + Auto Claim Voucher Food|\n");
-echo color("white","| ____|____•_+ Buat PIN -_•_____|_____|\n");
+echo color("green"," ======================================\n");
+echo color("yellow","|Daftar Akun + Auto Claim Voucher Food|\n");
+echo color("yellow","| ____|____•_+ Buat PIN -_•_____|_____|\n");
 echo color("green","| ________|______|__|_______|_________|\n");
 echo color("green","| __________|___|_____|___|___________|\n");
-echo color("white","| ____________|___21____|_____________|\n");
-echo color("white","| Version :__∆UBUR - UBUR∆________|\n");
-echo color("white","| Time    :".date('[d-m-Y] [H:i:s]    ')."|\n");
-echo color("red"," ======================================\n");
+echo color("yellow","| ____________|___21____|_____________|\n");
+echo color("yellow","| Version :__∆UBUR - UBUR∆________|\n");
+echo color("yellow","| Time    :".date('[d-m-Y] [H:i:s]    ')."|\n");
+echo color("green"," ======================================\n");
 
 // function change(){
         $nama = nama();
@@ -68,7 +68,7 @@ echo color("red"," ======================================\n");
         goto goride;
         }else{
         echo "\n".color("red","-] Message: ".$message);
-        echo "\n".color("white","!] Claim voc GOFOOD 15K 10K");
+        echo "\n".color("white","!] Claim voc GOFOOD 15K 5K 10K");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -83,14 +83,14 @@ echo color("red"," ======================================\n");
         }else{
         echo "\n".color("red","+] Message: ".$messageboba19);
         goride:
-        echo "\n".color("white","!] Claim voc GOFOOD 15K 10K");
+        echo "\n".color("white","!] Claim voc Cashback 4k");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(1);
         }
         sleep(3);
-        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320A"}');
+        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJAINAJA"}');
         $messageboba19 = fetch_value($boba19,'"message":"','"');
         echo "\n".color("red","+] Message: ".$messageboba19);
         echo "\n".color("white","!] Claim voc GOFOOD 30K");
