@@ -19,7 +19,7 @@ echo "\e[93m╚═════════════════════�
 	goto login;
 login:
 echo "\e[93m╔══════════════════════════════════╗\n";
-$pass = ask_hidden( '║ User Login : ' );
+$pass = ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
