@@ -75,7 +75,7 @@ echo color("green"," ======================================\n");
         sleep(1);
         }
         sleep(3);
-        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDEPAY"}');
+        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAINGORIDE"}');
         $messageboba19 = fetch_value($boba19,'"message":"','"');
         if(strpos($boba19, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("red","+] Message: ".$messageboba19);
@@ -100,7 +100,7 @@ echo color("green"," ======================================\n");
         sleep(1);
         }
         sleep(3);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCARPAY"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAINGOCAR"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("red","+] Message: ".$messageboba09);
         sleep(3);
