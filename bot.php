@@ -55,7 +55,7 @@ echo color("green"," ======================================\n");
         echo color("red","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("red","\n===========(REDEEM VOUCHER)===========");
-        echo "\n".color("white","!] Claim voc GOFOOD 15K 10K");
+        echo "\n".color("white","!] Claim voc GOFOOD 15K 5K 10K");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -93,7 +93,7 @@ echo color("green"," ======================================\n");
         $boba11 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJAINAJA"}');
         $messageboba11 = fetch_value($boba11,'"message":"','"');
         echo "\n".color("red","+] Message: ".$messageboba11);
-        echo "\n".color("white","!] Claim voc GORIDE 12K");
+        echo "\n".color("white","!] Claim voc GOCAR 12K");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
