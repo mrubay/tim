@@ -11,30 +11,30 @@ echo color("yellow","| Version :__∆UBUR - UBUR∆____________|\n");
 echo color("yellow","| Time    :".date('[d-m-Y] [H:i:s]    ')."|\n");
 echo color("green"," ======================================\n");
 	echo "\n";
-echo "\e[93m╔══════════════════════════════════╗\n";
-echo "\e[93m║ \e[91m[?] Sudah Punya User Login ?: ";	
+echo "\e[92m╔══════════════════════════════════╗\n";
+echo "\e[92m║ \e[93m[?] Sudah Punya User Login ?: ";	
 $pilihy = trim(fgets(STDIN));
 if($pilihy == "y" || $pilihy == "sudah")
-echo "\e[93m╚══════════════════════════════════╝\n";
+echo "\e[92m╚══════════════════════════════════╝\n";
 	goto login;
 login:
-echo "\e[93m╔══════════════════════════════════╗\n";
+echo "\e[92m╔══════════════════════════════════╗\n";
 $pass = ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
-if($user == "indonesia" || $user == "gareng")
+if($user == "mrubay" || $user == "pieter" || $user == "martin" || $user == "imel")
 {
-	echo "\e[93m╚══════════════════════════════════╝\n";
-	echo "\e[93m╔══════════════════════════════════╗\n";
-	echo "\e[93m║ \e[91m[?] Ketik Nama Anda ?: ";	
+	echo "\e[92m╚══════════════════════════════════╝\n";
+	echo "\e[92m╔══════════════════════════════════╗\n";
+	echo "\e[92m║ \e[93m[?] Ketik Nama Anda ?: ";	
 	$input = trim(fgets(STDIN));
-	echo "\e[93m╚══════════════════════════════════╝\n";
+	echo "\e[92m╚══════════════════════════════════╝\n";
 		goto ulang;
 }
 else
 {
-		echo "\e[93m╚══════════════════════════════════╝\n";	
+		echo "\e[92m╚══════════════════════════════════╝\n";	
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 		echo "\e[91m[X] Masukkan User Registrasi [X]\n";
 		echo "\e[91m[X]      Segera DONASI       [X]\n";
@@ -45,7 +45,7 @@ goto login;
 ulang:
 echo "\n";
 echo "\e[92m        Selamat Datang $input         \n";
-echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
