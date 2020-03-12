@@ -8,7 +8,7 @@ echo "\e[92m| _\e[91mUNTUK\e[92m_\e[91mREGISTRASI\e[92m_\e[91mSILAHKAN\e[92m_\e[
 echo "\e[92m| ___\e[93mTELEGRAM\e[92m_\e[91m:@mang*b*y\e[92m___________________|\n";
 echo "\e[92m| ___\e[93mGITHUB\e[92m___\e[91m:github.com/mrubay\e[92m___________|\n";
 echo "\e[92m| ___\e[93mVersion\e[92m__\e[91m:∆UBUR\e[92m_\e[93m-\e[92m_\e[93mUBUR\e[92m_\e[93m21∆\e[92m____________|\n";
-echo "\e[92m| ___\e[93mTime\e[92m_____\e[93m:".date('[d-m-Y]\e[92m_\e[93m[H:i:s]')."\e[92m_____|\n";
+echo "\e[92m| ___\e[93mTime\e[92m_____\e[93m:".date('[d-m-Y] [H:i:s]')."\e[92m_____|\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\n";
 echo "\e[92m╔══════════════════════════════════╗\n";
