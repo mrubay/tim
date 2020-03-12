@@ -7,7 +7,7 @@ echo color("yellow","| ____|____•_+ Buat PIN -_•_____|_____|\n");
 echo color("green","| ________|______|__|_______|_________|\n");
 echo color("green","| __________|___|_____|___|___________|\n");
 echo color("yellow","| ____________|___21____|_____________|\n");
-echo "\e[92m| \e[93mVersion :__∆UBUR - UBUR∆____________ \e[92m|\n");
+echo "\e[92m| \e[93mVersion :__∆UBUR - UBUR∆____________ \e[92m|\n";
 echo color("yellow","| Time    :".date('[d-m-Y] [H:i:s]    ')."|\n");
 echo color("green"," ======================================\n");
 	echo "\n";
