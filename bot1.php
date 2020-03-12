@@ -1,14 +1,14 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[92m| __\e[93mDaftar Akun + Auto Claim Voucher Food\e[92m__|\n";
 echo "\e[92m| ___________\e[93m•_+ Buat PIN -_•\e[92m______________|\n";
 echo "\e[92m| _\e[91mUNTUK REGISTRASI SILAHKAN HUBUNGI ADMIN\e[92m_|\n";
-echo "\e[92m| _________\e[91mTELEGRAM  : @mang*b*y\e[92m___________|\n";
-echo "\e[92m| _______________\e[93m|___21____|\e[92m_______________|\n";
-echo "\e[92m| _____\e[93mVersion :∆UBUR - UBUR∆\e[92m______________|\n";
-echo "\e[92m| _____\e[93mTime:".date('[d-m-Y] [H:i:s]')."\e[92m________|\n";
+echo "\e[92m| ___\e[91mTELEGRAM : @mang*b*y\e[92m__________________|\n";
+echo "\e[92m| ___\e[93mGITHUB   : github.com/mrubay\e[92m__________|\n";
+echo "\e[92m| ___\e[93mVersion  :∆UBUR - UBUR 21∆\e[92m____________|\n";
+echo "\e[92m| ___\e[93mTime     :".date('[d-m-Y] [H:i:s]')."\e[92m_____|\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\n";
 echo "\e[92m╔══════════════════════════════════╗\n";
