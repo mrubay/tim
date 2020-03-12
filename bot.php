@@ -139,7 +139,6 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(3);
         $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=13&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
-        $voucher3 = getStr1('"title":"','",',$cekvoucher,"3");
         $voucher1 = getStr1('"title":"','",',$cekvoucher,"1");
         $voucher2 = getStr1('"title":"','",',$cekvoucher,"2");
         $voucher4 = getStr1('"title":"','",',$cekvoucher,"4");
