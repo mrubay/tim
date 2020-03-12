@@ -2,10 +2,10 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[92m| __\e[93mDaftar Akun + Auto Claim Voucher Food\e[92m__|\n";
-echo "\e[92m| ___________\e[93m•_+ Buat PIN -_•\e[92m______________|\n";
-echo "\e[92m| _\e[91mUNTUK REGISTRASI SILAHKAN HUBUNGI ADMIN\e[92m_|\n";
-echo "\e[92m| ___\e[93mTELEGRAM :@mang*b*y\e[92m___________________|\n";
+echo "\e[92m| __\e[93mDaftar\e[92m_\e[93mAkun\e[92m_\e[93m+\e[92m_\e[93mAuto\e[92m_\e[93mClaim\e[92m_\e[93mVoucher\e[92m_\e[93mFood\e[92m__|\n";
+echo "\e[92m| ___________\e[93m•_+\e[92m_\e[93mBuat\e[92m_\e[93mPIN\e[92m_\e[93m-_•\e[92m______________|\n";
+echo "\e[92m| _\e[91mUNTUK\e[92m_\e[93mREGISTRASI\e[92m_\e[93mSILAHKAN\e[92m_\e[93mHUBUNGI\e[92m_\e[93mADMIN\e[92m_|\n";
+echo "\e[92m| ___\e[93mTELEGRAM\e[92m_\e[93m:@mang*b*y\e[92m___________________|\n";
 echo "\e[92m| ___\e[93mGITHUB\e[92m___\e[93m:github.com/mrubay\e[92m___________|\n";
 echo "\e[92m| ___\e[93mVersion\e[92m__\e[93m:∆UBUR - UBUR 21∆\e[92m____________|\n";
 echo "\e[92m| ___\e[93mTime\e[92m_____\e[93m:".date('[d-m-Y] [H:i:s]')."\e[92m_____|\n";
