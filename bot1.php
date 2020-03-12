@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo "\e[92m========================================================\n";
+echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[92m| __\e[93mDaftar Akun + Auto Claim Voucher Food\e[92m__|\n";
 echo "\e[92m| ___________\e[93m•_+ Buat PIN -_•\e[92m______________|\n";
 echo "\e[92m| _\e[91mUNTUK REGISTRASI SILAHKAN HUBUNGI ADMIN\e[92m_|\n";
@@ -9,7 +9,7 @@ echo "\e[92m| _________\e[91mTELEGRAM  : @mang*b*y\e[92m___________|\n";
 echo "\e[92m| _______________\e[93m|___21____|\e[92m_______________|\n";
 echo "\e[92m| ______\e[93mVersion :  ∆UBUR - UBUR∆\e[92m___________|\n";
 echo "\e[92m| _\e[93mTime    :".date('[d-m-Y] [H:i:s]   ')."\e[92m_|\n";
-echo "\e[92m========================================================\n";
+echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\n";
 echo "\e[92m╔══════════════════════════════════╗\n";
 echo "\e[92m║ \e[93m[?] Sudah Punya User Login ?: ";	
@@ -37,7 +37,7 @@ else
 		echo "\e[92m╚══════════════════════════════════╝\n";	
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 		echo "\e[91m[X] Masukkan User Registrasi [X]\n";
-		echo "\e[91m[X]      Segera DONASI       [X]\n";
+		echo "\e[91m[X]    SEGERA MINTA IZIN     [X]\n";
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 goto login;
 }
