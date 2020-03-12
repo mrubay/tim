@@ -137,7 +137,7 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","+] Message: ".$messageboba09);
         sleep(3);
-        $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
+        $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=13&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
         $voucher3 = getStr1('"title":"','",',$cekvoucher,"3");
         $voucher1 = getStr1('"title":"','",',$cekvoucher,"1");
