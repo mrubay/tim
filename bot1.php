@@ -8,7 +8,7 @@ echo "\e[92m| _\e[91mUNTUK REGISTRASI SILAHKAN HUBUNGI ADMIN\e[92m_|\n";
 echo "\e[92m| _________\e[91mTELEGRAM  : @mang*b*y\e[92m___________|\n";
 echo "\e[92m| _______________\e[93m|___21____|\e[92m_______________|\n";
 echo "\e[92m| ____\e[93mVersion :∆UBUR - UBUR∆\e[92m_______________|\n";
-echo "\e[92m| _\e[93mTime    :".date('[d-m-Y] [H:i:s]   ')."\e[92m_|\n";
+echo "\e[92m| ____\e[93mTime:".date('[d-m-Y] [H:i:s]____')."\e[92m_|\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\n";
 echo "\e[92m╔══════════════════════════════════╗\n";
