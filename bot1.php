@@ -113,7 +113,7 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+] Message: ".$message);
-        goto gofoood;
+        goto gofood;
         }else{
         echo "\n".color("green","+] Message: ".$message);
         gofood:
